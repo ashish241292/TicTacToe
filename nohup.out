@@ -1,0 +1,3 @@
+/usr/bin/atom: line 119: 10325 Segmentation fault      nohup "$ATOM_PATH" --executed-from="$(pwd)" --pid=$$ "$@" > "$ATOM_HOME/nohup.out" 2>&1
+Failed to get crash dump id.
+Report Id: 

@@ -1,29 +1,23 @@
 
 import React, { Component } from 'react';
-import Board from "./app/Board"
+import Board from "./app/Board";
 import {
   AppRegistry,
   StyleSheet,
+  StatusBar,
   Text,
   View
 } from 'react-native';
-
-
-winState = [
-            [ [0,0], [0,1], [0,2] ],
-            [ [1,0], [1,1], [1,2] ],
-            [ [2,0], [2,1], [2,2] ],
-            [ [0,0], [1,0], [2,0] ],
-            [ [0,1], [1,1], [2,1] ],
-            [ [0,2], [1,2], [2,2] ],
-            [ [0,0], [1,1], [2,2] ],
-            [ [0,2], [1,1], [2,0] ],
-        ];
 
 export default class TicToc extends Component {
   render() {
     return (
       <View style={styles.container}>
+            <StatusBar
+                backgroundColor="#CFD8DC"
+                barStyle="dark-content"
+                networkActivityIndicatorVisible={true}
+            />
         <Board board={[ [0,0,0], [0,0,0], [0,0,0] ]} />
       </View>
     );
